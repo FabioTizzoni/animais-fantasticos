@@ -1,0 +1,71 @@
+.mapa {
+  grid-column: 2;
+}
+
+.dados {
+  grid-column: 3;
+}
+
+.dados li {
+  margin-bottom: 1rem;
+  font-family: Helvetica;
+}
+
+.dado::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 10px;
+  margin-right: 10px;
+  background: #fb5;
+}
+
+.btc-preco {
+  background: yellowgreen;
+  padding: 0.2rem 0.5rem;
+  font-weight: bold;
+  border-radius: 2px;
+}
+
+[data-semana]::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 8px;
+  margin-right: 10px;
+  background: red;
+  border: 2px solid black;
+}
+
+[data-semana]::after {
+  content: " - No momento estamos fechado.";
+}
+
+.aberto::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 8px;
+  margin-right: 10px;
+  background: yellowgreen;
+  border: 2px solid black;
+  /* display: inline-block;
+  content: "";
+  width: 6px;
+  height: 6px;
+  background: yellowgreen;
+  border-radius: 50%;
+  margin-left: 4px;
+  border: 2px solid black; */
+}
+
+.aberto::after {
+  content: " - No momento estamos aberto.";
+}
+
+@media (max-width: 700px) {
+  .dados,
+  .mapa {
+    grid-column: 1/3;
+  }
+}
