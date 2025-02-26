@@ -1,14 +1,14 @@
-import ScrollSuave from "./modules/scroll-suave.js";
-import Accordion from "./modules/accordion.js";
-import TabNav from "./modules/tabnav.js";
-import Modal from "./modules/modal.js";
-import Tooltip from "./modules/tooltip.js";
-import ScrollAnima from "./modules/scroll-anima.js";
-import DropDownMenu from "./modules/dropdown-menu.js";
-import MenuMobile from "./modules/menu-mobile.js";
-import Funcionamento from "./modules/funcionamento.js";
-import fetchAnimais from "./modules/fetch-animais.js";
-import fetchBitcoin from "./modules/fetch-bitcoin.js";
+import ScrollSuave from "./js/modules/scroll-suave.js";
+import Accordion from "./js/modules/accordion.js";
+import TabNav from "./js/modules/tabnav.js";
+import Modal from "./js/modules/modal.js";
+import Tooltip from "./js/modules/tooltip.js";
+import ScrollAnima from "./js/modules/scroll-anima.js";
+import DropDownMenu from "./js/modules/dropdown-menu.js";
+import MenuMobile from "./js/modules/menu-mobile.js";
+import Funcionamento from "./js/modules/funcionamento.js";
+import fetchAnimais from "./js/modules/fetch-animais.js";
+import fetchBitcoin from "./js/modules/fetch-bitcoin.js";
 
 const scrollSuave = new ScrollSuave('[data-menu="suave"] a[href^="#"]');
 scrollSuave.init();
